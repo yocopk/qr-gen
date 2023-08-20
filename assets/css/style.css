@@ -23,11 +23,10 @@ body{
 
 .logoimg{
     max-width: 250px;
-    /* padding: 25px 35px; */
-    position: relative;
-    top: 20%;
-    left: 33%;
-    margin-top: 70px;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     
 }
 
@@ -104,8 +103,10 @@ body{
 }
 
 #copyright{
-    margin-top: 50%;
-    margin-left: 28%;
+    position: absolute;
+    top: 78%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-size: 14px;
     color: #FFC436;
 }
