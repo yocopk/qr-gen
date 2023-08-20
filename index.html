@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR GEN</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="logo-container">
+      <img class="logoimg" src="assets/img/logo.png" alt="" />
+    </div>
+    <div class="container">
+      <p>Enter your text or URL</p>
+      <input type="text" placeholder="Text or URL" id="qrText" />
+
+      <div id="imgBox">
+        <img src="" id="qrImage" />
+      </div>
+
+      <button onclick="generateQR()">Generate QR Code</button>
+    </div>
+
+    <div class="copyright" id="copyright">
+      <p class="footer-copy">
+        Copyright &#169; 2023 Andrea Marchese. Tutti i diritti riservati.
+      </p>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
