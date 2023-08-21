@@ -21,13 +21,21 @@ body{
     border: 3px solid #FFC436;
 }
 
-.logoimg{
+#logoImg{
+    max-width: 250px;
+    position: absolute;
+    top: 23%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .1s;
+}
+
+#logoImg.show-logoImg{
     max-width: 250px;
     position: absolute;
     top: 15%;
     left: 50%;
     transform: translate(-50%, -50%);
-    
 }
 
 .container p{
@@ -104,9 +112,29 @@ body{
 
 #copyright{
     position: absolute;
-    top: 78%;
+    top: 68%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 14px;
+    font-size: 12px;
     color: #FFC436;
+    transition: .1s;
+}
+
+#copyright.show-copyright{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+    color: #FFC436;
+}
+
+@media(max-width:425px){
+    #copyright{
+        font-size: 10px;
+    }
+
+    .container{
+        width: 90%;
+    }
 }
