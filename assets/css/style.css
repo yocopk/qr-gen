@@ -9,13 +9,19 @@ body{
     background: #191D88;
 }
 
+.all-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    gap: 20px;
+}
+
 .container{
     width: 400px;
     padding: 25px 35px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    
     background: #fff;
     border-radius: 10px;
     border: 3px solid #FFC436;
@@ -23,19 +29,6 @@ body{
 
 #logoImg{
     max-width: 250px;
-    position: absolute;
-    top: 23%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: .1s;
-}
-
-#logoImg.show-logoImg{
-    max-width: 250px;
-    position: absolute;
-    top: 15%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .container p{
@@ -111,10 +104,6 @@ body{
 }
 
 #copyright{
-    position: absolute;
-    top: 68%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     font-size: 12px;
     color: #FFC436;
     transition: .1s;
@@ -136,5 +125,9 @@ body{
 
     .container{
         width: 90%;
+    }
+
+    .all-container{
+        margin-top: 45px;
     }
 }

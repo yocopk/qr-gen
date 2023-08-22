@@ -10,8 +10,8 @@ function generateQR() {
       "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=" +
       qrText.value;
     imgBox.classList.add("show-img");
-    copyright.classList.add("show-copyright");
-    logoImg.classList.add("show-logoImg");
+    // copyright.classList.add("show-copyright");
+    // logoImg.classList.add("show-logoImg");
   } else {
     qrText.classList.add("error");
     setTimeout(() => {
